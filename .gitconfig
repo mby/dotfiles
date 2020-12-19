@@ -1,0 +1,9 @@
+[credential]
+	helper = cache
+[core]
+	editor = nvim
+[user]
+	name = mbugrayildiz
+	email = mbugrayildiz@outlook.com
+[pull]
+	rebase = false
