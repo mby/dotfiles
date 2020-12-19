@@ -3,7 +3,7 @@ set $mod Mod4
 floating_modifier $mod
 
 # styles
-font pango:Terminus 8
+font pango:Fira Code Retina 8
 gaps inner 10
 smart_gaps on
 smart_borders on
@@ -24,7 +24,7 @@ bindsym XF86MonBrightnessDown exec sudo brightnessctl set 10%-
 
 # programs
 bindsym $mod+Return exec alacritty
-bindsym $mod+d      exec dmenu_run
+bindsym $mod+d      exec dmenu_run -fn "Fira Code Retina:pixelsize=14"
 
 # window
 bindsym $mod+Shift+q kill
