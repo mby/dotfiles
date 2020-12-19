@@ -15,5 +15,6 @@ set -o vi
 shopt -s autocd
 
 # aliases
+alias cfg="git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 alias ls='ls --color=auto'
 alias vi='nvim'
