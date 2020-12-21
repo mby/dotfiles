@@ -7,8 +7,10 @@ bison
 cronie
 dhcpcd
 discord
+fd
 firefox
 flex
+fzf
 grub
 haveged
 i3-gaps
@@ -23,7 +25,9 @@ pacman-contrib
 pamixer
 patch
 pkgconf
+premake
 terminus-font
+tree
 ttf-fira-code
 unrar
 unzip
