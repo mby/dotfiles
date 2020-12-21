@@ -4,6 +4,7 @@ autoconf
 automake
 base
 bison
+cloc
 cronie
 dhcpcd
 discord
@@ -13,6 +14,7 @@ flex
 fzf
 grub
 haveged
+hyperfine
 i3-gaps
 intel-ucode
 linux-zen
@@ -26,13 +28,11 @@ pamixer
 patch
 pkgconf
 premake
-terminus-font
 tree
 ttf-fira-code
 unrar
 unzip
 wget
-which
 xdg-user-dirs
 xf86-video-vesa
 xorg-bdftopcf
@@ -66,7 +66,6 @@ xorg-xlsatoms
 xorg-xlsclients
 xorg-xpr
 xorg-xrefresh
-xorg-xset
 xorg-xsetroot
 xorg-xvinfo
 xorg-xwayland
