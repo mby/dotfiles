@@ -8,7 +8,7 @@ export PATH=`yarn global bin`:$PATH
 export EDITOR='nvim'
 
 # prompt
-PS1='\W: '
+PS1='\033[36m\W: \033[39m'
 
 # options
 set -o vi
