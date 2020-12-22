@@ -4,6 +4,7 @@ autoconf
 automake
 base
 bison
+brightnessctl
 cloc
 cronie
 dhcpcd
