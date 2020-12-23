@@ -17,8 +17,11 @@ shopt -s autocd
 # keybinds
 bind '"\C-f":"cd && cd `fd -t d | fzf`
 "'
+bind '"\C-t":"clear && fg
+"'
 
 # aliases
 alias cfg="git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 alias ls='ls --color=auto'
 alias vi='nvim'
+alias p='sudo pacman'

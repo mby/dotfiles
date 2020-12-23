@@ -31,6 +31,7 @@ pamixer
 patch
 pkgconf
 premake
+ripgrep
 tree
 ttf-fira-code
 unrar
