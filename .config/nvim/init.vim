@@ -28,6 +28,8 @@ set splitright splitbelow
 set clipboard+=unnamedplus mouse=a
 
 " keybinds
+nnoremap <leader>rc		:e $MYVIMRC<cr>
+
 nnoremap ;			:
 nnoremap :			;
 
@@ -38,3 +40,8 @@ nnoremap <leader>.		:!ctags -R .<cr>
 
 nnoremap <leader>f		:NERDTreeToggle<cr>
 nnoremap <leader><space>	:Files<cr>
+
+nnoremap <c-h>			<c-w>h
+nnoremap <c-j>			<c-w>j
+nnoremap <c-k>			<c-w>k
+nnoremap <c-l>			<c-w>l

@@ -3,8 +3,11 @@ alsa-utils
 autoconf
 automake
 base
+bat
 bison
+blueman
 brightnessctl
+clang
 cloc
 cronie
 dhcpcd
@@ -23,7 +26,6 @@ make
 neofetch
 neovim
 ntp
-openssh
 pacman-contrib
 pamixer
 patch
