@@ -6,4 +6,4 @@ setxkbmap -option caps:swapescape
 feh --bg-scale ~/.wlp
 
 # start window manager
-exec i3
+exec bspwm
