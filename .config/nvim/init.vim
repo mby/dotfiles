@@ -8,6 +8,7 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'editorconfig/editorconfig-vim'
 	Plug 'bronson/vim-trailing-whitespace'
 	Plug 'machakann/vim-sandwich'
+	Plug 'tpope/vim-commentary'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'mhinz/vim-signify'
 
@@ -20,11 +21,10 @@ call plug#end()
 " config
 set shortmess+=c
 set updatetime=300
-set noprompt cmdheight=2
 set number cc=80
 set splitright splitbelow
 set clipboard+=unnamedplus mouse=a
-set hidden nobackup nowritebackup
+set hidden nobackup nowritebackup noprompt
 
 colorscheme codedark
 let g:coc_global_extensions = ['coc-clangd', 'coc-tsserver', 'coc-json', 'coc-eslint', 'coc-html', 'coc-css', 'coc-emmet', 'coc-python', 'coc-rls', 'coc-svelte', 'coc-vetur', 'coc-todolist', 'coc-fzf-preview', 'coc-explorer', 'coc-discord-rpc', 'coc-pairs']
@@ -39,6 +39,7 @@ nnoremap :			;
 
 nnoremap <leader>w		:w<cr>
 nnoremap <leader>q		:q<cr>
+nnoremap <leader>Q		:q!<cr>
 nnoremap <leader>x		:x<cr>
 
 nnoremap <c-h>			<c-w>h
