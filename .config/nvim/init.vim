@@ -21,7 +21,7 @@ call plug#end()
 " config
 set shortmess+=c
 set updatetime=300
-set number cc=80
+set number relativenumber cc=80
 set splitright splitbelow
 set clipboard+=unnamedplus mouse=a
 set hidden nobackup nowritebackup noprompt

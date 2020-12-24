@@ -19,6 +19,7 @@ flex
 fzf
 grub
 haveged
+htop
 hyperfine
 intel-ucode
 linux-zen

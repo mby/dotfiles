@@ -11,13 +11,14 @@ export EDITOR='nvim'
 PS1='\033[36m\W: \033[39m'
 
 # options
+HISTCONTROL=ignoreboth
 set -o vi
 shopt -s autocd
 
 # keybinds
-bind '"\C-f":"cd && cd `fd -t d | fzf`
+bind '"\C-f":" cd && cd `fd -t d | fzf`
 "'
-bind '"\C-t":"clear && fg
+bind '"\C-t":" clear && fg
 "'
 
 # aliases

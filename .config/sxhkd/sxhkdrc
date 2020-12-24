@@ -1,7 +1,7 @@
 # apps
 super + Return
 	alacritty
-super + @space
+super + d
 	dmenu_run -fn "Fira Code Retina:pixelsize=14"
 
 

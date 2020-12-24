@@ -1,19 +1,24 @@
 #! /bin/sh
 
-# sxhkd
-pgrep -x sxhkd > /dev/null || sxhkd &
+# kill everything
+killall -q sxhkd polybar blueman-applet
 
-# polybar
-killall -q polybar
+# programs
+sxhkd &
 polybar example &
-bspc config top_padding 20
+blueman-applet &
 
 # workspaces
 bspc monitor -d I II III IV V VI VII VIII IX X
 
 # prefs
-bspc config border_width       1
-bspc config window_gap         10
-bspc config split_ratio        0.52
-bspc config borderless_monocle true
-bspc config gapless_monocle    true
+bspc config top_padding           20
+bspc config border_width          1
+bspc config window_gap            10
+bspc config split_ratio           0.52
+bspc config borderless_monocle    true
+bspc config gapless_monocle       true
+bspc config focus_follows_pointer true
+
+# rules
+bspc rule -a Blueman-manager state=floating focus=on
