@@ -15,6 +15,11 @@ XF86MonBrightness{Up,Down}
 	sudo brightnessctl set {+10%,10%-}
 
 
+# lock &/ suspend
+super + {_,shift +} @comma
+	i3lock -i ~/.wlp {_,&& systemctl suspend}
+
+
 # reloading
 
 ## make sxhkd reload its configuration files:

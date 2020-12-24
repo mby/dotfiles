@@ -11,6 +11,7 @@ bspwm
 clang
 cloc
 cronie
+ctags
 dhcpcd
 discord
 fd
@@ -38,6 +39,7 @@ ttf-fira-code
 unrar
 unzip
 wget
+xautolock
 xdg-user-dirs
 xf86-video-vesa
 xorg-bdftopcf
