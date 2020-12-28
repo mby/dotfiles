@@ -48,3 +48,5 @@ nnoremap <c-l>			<c-w>l
 nnoremap <leader>.		:!ctags -R .<cr>
 nnoremap <leader>f		:NERDTreeToggle<cr>
 nnoremap <leader><space>	:Files<cr>
+nnoremap <leader>dd		:SignifyHunkDiff<cr>
+nnoremap <leader>du		:SignifyHunkUndo<cr>
