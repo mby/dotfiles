@@ -26,3 +26,10 @@ alias cfg="git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 alias ls='ls --color=auto'
 alias vi='nvim'
 alias p='sudo pacman'
+
+
+# commands
+setkbd() {
+	setxkbmap gb
+	setxkbmap -option caps:swapescape
+}

@@ -1,5 +1,6 @@
 alacritty
 alsa-utils
+atom
 autoconf
 automake
 base
@@ -11,13 +12,13 @@ bspwm
 clang
 cloc
 cronie
-ctags
 dhcpcd
 discord
 fd
 firefox
 flex
 fzf
+gdb
 grub
 haveged
 htop
@@ -33,7 +34,9 @@ pamixer
 patch
 pkgconf
 premake
-ripgrep
+redshift
+sxiv
+telegram-desktop
 tree
 ttf-fira-code
 unrar

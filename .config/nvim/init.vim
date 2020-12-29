@@ -5,6 +5,7 @@ let mapleader = " "
 " plugins
 call plug#begin(stdpath('data') . '/plugged')
 	" essentials
+	Plug 'junegunn/goyo.vim'
 	Plug 'editorconfig/editorconfig-vim'
 	Plug 'bronson/vim-trailing-whitespace'
 	Plug 'junegunn/fzf.vim'
@@ -50,3 +51,4 @@ nnoremap <leader>f		:NERDTreeToggle<cr>
 nnoremap <leader><space>	:Files<cr>
 nnoremap <leader>dd		:SignifyHunkDiff<cr>
 nnoremap <leader>du		:SignifyHunkUndo<cr>
+nnoremap <leader>g		:Goyo<cr>

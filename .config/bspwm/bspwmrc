@@ -1,13 +1,14 @@
 #! /bin/sh
 
 # kill everything
-killall -q sxhkd polybar blueman-applet xautolock
+killall -q sxhkd polybar blueman-applet xautolock redshift
 
 # programs
 sxhkd &
 polybar example &
 blueman-applet &
 xautolock -locker "i3lock -i ~/.wlp" &
+redshift &
 
 # workspaces
 bspc monitor -d I II III IV V VI VII VIII IX X
