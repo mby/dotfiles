@@ -15,18 +15,17 @@ call plug#begin(stdpath('data') . '/plugged')
 
 	" eye candy
 	Plug 'mhinz/vim-signify'
-	Plug 'vim-airline/vim-airline'
-	Plug 'tomasiser/vim-code-dark'
+	Plug 'co1ncidence/mountaineer.vim'
 call plug#end()
 
 
 " config
-set updatetime=300
-set number relativenumber cc=80
+set updatetime=100 termguicolors
+set number cc=80
 set splitright splitbelow
 set clipboard+=unnamedplus mouse=a
-set hidden nobackup nowritebackup noprompt
-colorscheme codedark
+set hidden nobackup nowritebackup
+colorscheme mountaineer
 
 
 " keybinds
