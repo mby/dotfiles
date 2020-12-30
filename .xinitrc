@@ -1,9 +1,5 @@
 # set keyboard
-setxkbmap gb
-setxkbmap -option caps:swapescape
-
-# set wallpaper
-feh --bg-scale ~/.wlp
+setxkb
 
 # start window manager
 exec bspwm

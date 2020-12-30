@@ -39,9 +39,9 @@ nnoremap <c-t>			<c-z>
 nnoremap ;			:
 nnoremap :			;
 
-nnoremap q			:q<cr>
-nnoremap Q			:q!<cr>
-nnoremap ss			:w<cr>
+nnoremap <leader>q		:q<cr>
+nnoremap <leader>Q		:q!<cr>
+nnoremap <leader>w		:w<cr>
 
 nnoremap <leader>.		:!ctags -R .<cr>
 nnoremap <leader>f		:NERDTreeToggle<cr>
