@@ -8,14 +8,15 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'junegunn/goyo.vim'
 	Plug 'editorconfig/editorconfig-vim'
 	Plug 'bronson/vim-trailing-whitespace'
-	Plug 'junegunn/fzf.vim'
 	Plug 'machakann/vim-sandwich'
 	Plug 'tpope/vim-commentary'
+	Plug 'junegunn/fzf.vim'
 	Plug 'scrooloose/nerdtree'
 
 	" eye candy
 	Plug 'mhinz/vim-signify'
 	Plug 'co1ncidence/mountaineer.vim'
+	Plug 'itchyny/lightline.vim'
 call plug#end()
 
 
@@ -24,26 +25,23 @@ set updatetime=100 termguicolors
 set number cc=80
 set splitright splitbelow
 set clipboard+=unnamedplus mouse=a
-set hidden nobackup nowritebackup
+set hidden nobackup nowritebackup noshowmode
+
+let g:lightline = { 'colorscheme': 'mountaineer' }
 colorscheme mountaineer
 
 
 " keybinds
 nnoremap <leader>rc		:e $MYVIMRC<cr>
+nnoremap <c-a>			<c-^>
 nnoremap <c-t>			<c-z>
 
 nnoremap ;			:
 nnoremap :			;
 
-nnoremap <leader>w		:w<cr>
-nnoremap <leader>q		:q<cr>
-nnoremap <leader>Q		:q!<cr>
-nnoremap <leader>x		:x<cr>
-
-nnoremap <c-h>			<c-w>h
-nnoremap <c-j>			<c-w>j
-nnoremap <c-k>			<c-w>k
-nnoremap <c-l>			<c-w>l
+nnoremap q			:q<cr>
+nnoremap Q			:q!<cr>
+nnoremap ss			:w<cr>
 
 nnoremap <leader>.		:!ctags -R .<cr>
 nnoremap <leader>f		:NERDTreeToggle<cr>

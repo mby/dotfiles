@@ -47,7 +47,7 @@ window:
     y: 10
 
   # Spread additional padding evenly around the terminal content.
-  #dynamic_padding: false
+  dynamic_padding: false
 
   # Window decorations
   #
@@ -166,8 +166,8 @@ font:
 colors:
   # Default colors
   primary:
-    background: '#000000'
-  #  foreground: '#c5c8c6'
+    background: '#050505'
+    #foreground: '#AC8AAC'
 
     # Bright and dim foreground colors
     #
