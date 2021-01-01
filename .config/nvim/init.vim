@@ -17,6 +17,9 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'mhinz/vim-signify'
 	Plug 'co1ncidence/mountaineer.vim'
 	Plug 'itchyny/lightline.vim'
+
+	" syntax
+	Plug 'elmcast/elm-vim'
 call plug#end()
 
 
@@ -43,9 +46,9 @@ nnoremap <leader>q		:q<cr>
 nnoremap <leader>Q		:q!<cr>
 nnoremap <leader>w		:w<cr>
 
-nnoremap <leader>.		:!ctags -R .<cr>
 nnoremap <leader>f		:NERDTreeToggle<cr>
 nnoremap <leader><space>	:Files<cr>
+nnoremap <leader>.		:!ctags -R .<cr>
 nnoremap <leader>dd		:SignifyHunkDiff<cr>
 nnoremap <leader>du		:SignifyHunkUndo<cr>
 nnoremap <leader>g		:Goyo<cr>

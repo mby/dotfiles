@@ -8,7 +8,8 @@ export PATH=`yarn global bin`:$PATH
 export EDITOR='nvim'
 
 # prompt
-PS1='\033[36m\W: \033[39m'
+PS1='\033[31m\W: \033[39m'
+export LS_COLORS="di=1;31"
 
 # options
 HISTCONTROL=ignoreboth
@@ -16,7 +17,7 @@ set -o vi
 shopt -s autocd
 
 # keybinds
-bind '"\C-f":" cd && cd `fd -t d | fzf`
+bind '"\C-f":" cd `fd -t d . ~ | fzf --preview=\"tree -L 2 -C {}\"`
 "'
 bind '"\C-t":" clear && fg
 "'
