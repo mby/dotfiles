@@ -1,13 +1,14 @@
 #! /bin/sh
 
 # kill everything
-killall -q sxhkd polybar blueman-applet xautolock
+killall -q sxhkd polybar blueman-applet xautolock picom
 
 # programs
 sxhkd &
 polybar example &
 blueman-applet &
 xautolock -locker "i3lock -i ~/.wlp" &
+picom &
 [ -f ~/.fehbg ] ~/.fehbg &
 
 # workspaces
