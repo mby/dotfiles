@@ -17,7 +17,7 @@ XF86MonBrightness{Up,Down}
 
 # lock &/ suspend
 super + {_,shift +} @comma
-	i3lock -i ~/.wlp {_,&& systemctl suspend}
+	i3lock-fancy -f "Fira Code Retina" -t "YILDIZ" -g {_,&& systemctl suspend}
 
 
 # reloading

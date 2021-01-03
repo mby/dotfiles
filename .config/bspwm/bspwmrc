@@ -7,7 +7,7 @@ killall -q sxhkd polybar blueman-applet xautolock picom
 sxhkd &
 polybar example &
 blueman-applet &
-xautolock -locker "i3lock -i ~/.wlp" &
+xautolock -locker "i3lock-fancy -f \"Fira Code Retina\" -t \"YILDIZ\" -g" &
 picom --experimental-backends &
 
 [ -f ~/.fehbg ] && ~/.fehbg

@@ -13,6 +13,7 @@ bison
 blueman
 bluez
 bluez-libs
+bpytop
 brightnessctl
 bspwm
 clang
@@ -41,7 +42,7 @@ heroku-cli-bin
 htop
 hyperfine
 i3-gaps
-i3lock
+i3lock-fancy-git
 i3status
 imagemagick
 intel-ucode
