@@ -57,6 +57,7 @@ marked
 mongodb-bin
 neofetch
 neovim
+network-manager-applet
 networkmanager
 ntp
 openssh
@@ -73,6 +74,7 @@ pulseaudio-bluetooth
 python
 qemu-headless
 qemu-headless-arch-extra
+redshift
 ripgrep
 sudo
 sxhkd

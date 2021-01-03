@@ -34,5 +34,3 @@ setkbd() {
 	setxkbmap gb
 	setxkbmap -option caps:swapescape
 }
-
-neofetch
