@@ -8,8 +8,9 @@ export PATH=`yarn global bin`:$PATH
 export EDITOR='nvim'
 
 # prompt
-PS1='\033[31m\W: \033[39m'
-export LS_COLORS="di=1;31"
+PS1='\033[34m\W: \033[39m'
+export LS_COLORS=''
+export BAT_THEME='Dracula'
 
 # options
 HISTCONTROL=ignoreboth

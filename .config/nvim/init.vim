@@ -15,7 +15,7 @@ call plug#begin(stdpath('data') . '/plugged')
 
 	" eye candy
 	Plug 'mhinz/vim-signify'
-	Plug 'co1ncidence/mountaineer.vim'
+	Plug 'dracula/vim', { 'as': 'dracula' }
 	Plug 'itchyny/lightline.vim'
 
 	" syntax
@@ -30,8 +30,8 @@ set splitright splitbelow
 set clipboard+=unnamedplus mouse=a
 set hidden nobackup nowritebackup noshowmode
 
-let g:lightline = { 'colorscheme': 'mountaineer' }
-colorscheme mountaineer
+let g:lightline = { 'colorscheme': 'dracula' }
+colorscheme dracula
 
 
 " keybinds
