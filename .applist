@@ -85,7 +85,6 @@ valgrind
 visual-studio-code-bin
 wget
 which
-xautolock
 xclip
 xdg-user-dirs
 xdg-utils
@@ -143,3 +142,4 @@ yay
 zathura
 zathura-pdf-poppler
 zip
+zoom
