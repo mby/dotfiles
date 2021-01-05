@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # kill everything
-killall -q sxhkd polybar nm-applet blueman-applet redshift xautolock picom
+killall -q sxhkd polybar nm-applet blueman-applet redshift picom
 
 # programs
 setxkbmap gb
@@ -14,7 +14,6 @@ blueman-applet &
 
 [ -f ~/.fehbg ] && ~/.fehbg
 redshift &
-xautolock -locker "i3lock-fancy -f \"Fira Code Retina\" -t \"YILDIZ\" -g" &
 picom --experimental-backends &
 
 # workspaces
