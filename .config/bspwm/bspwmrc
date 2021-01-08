@@ -35,3 +35,4 @@ bspc config focus_follows_pointer   true
 
 # rules
 bspc rule -a Blueman-manager state=floating focus=on
+bspc rule -a Org.gnome.Nautilus state=floating focus=on

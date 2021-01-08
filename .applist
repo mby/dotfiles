@@ -9,13 +9,13 @@ bash-completion
 bat
 binutils
 bison
+blender
 blueman
 bluez
 bluez-libs
 brightnessctl
 bspwm
 clang
-cloc
 cronie
 ctags
 dhcpcd
@@ -25,6 +25,7 @@ dosfstools
 efibootmgr
 fd
 feh
+figlet
 firefox
 flex
 fzf
@@ -51,6 +52,7 @@ linux-zen
 m4
 make
 mongodb-bin
+nautilus
 neofetch
 neovim
 network-manager-applet
@@ -72,6 +74,7 @@ python
 qemu-headless
 qemu-headless-arch-extra
 redshift
+scc
 sudo
 sxhkd
 sxiv
