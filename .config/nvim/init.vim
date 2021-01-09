@@ -79,11 +79,12 @@ nnoremap ;			:
 nnoremap :			;
 
 nnoremap <leader>q		:q<cr>
-nnoremap <leader>Q		:q!<cr>
+nnoremap <leader>Q		:qa!<cr>
 nnoremap <leader>w		:w<cr>
 
 nnoremap <leader>f		:NERDTreeToggle<cr>
 nnoremap <leader><space>	:Files<cr>
+nnoremap <leader>b		:Buffers<cr>
 nnoremap <leader>.		:!ctags -R .<cr>
 nnoremap <leader>dd		:SignifyHunkDiff<cr>
 nnoremap <leader>du		:SignifyHunkUndo<cr>

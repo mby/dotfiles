@@ -12,7 +12,7 @@ font:
     family: "Fira Code Retina"
   size: 9
   offset:
-    y: 7
+        y: 2
 
 mouse:
   hide_when_typing: true
