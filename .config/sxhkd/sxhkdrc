@@ -1,8 +1,8 @@
 # apps
 super + Return
-	alacritty
+	$TERMINAL
 super + d
-	dmenu_run -fn "Fira Code Retina:pixelsize=14" -nb "#282a36" -sb "#44475a"
+	dmenu_run -fn "$FONT:pixelsize=18" -nb "#000" -sb "#222"
 
 
 # audio

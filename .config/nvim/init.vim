@@ -14,9 +14,9 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'junegunn/fzf.vim'
 	Plug 'scrooloose/nerdtree'
 	Plug 'mhinz/vim-signify'
+	Plug 'APZelos/blamer.nvim'
 
 	" eye candy
-	Plug 'dracula/vim', { 'as': 'dracula' }
 	Plug 'mhinz/vim-startify'
 	Plug 'itchyny/lightline.vim'
 	Plug 'junegunn/goyo.vim'
@@ -29,16 +29,18 @@ call plug#end()
 
 " config
 set updatetime=100 termguicolors
-set number cc=80
 set splitright splitbelow
 set clipboard+=unnamedplus mouse=a
 set hidden nobackup nowritebackup noshowmode
+syntax off
+highlight Pmenu ctermbg=gray guibg=#222222
+highlight SignColumn ctermbg=gray guibg=#222222
+highlight ColorColumn ctermbg=red
+call matchadd('ColorColumn', '\%81v', 100)
 
 let g:sneak#label = 1
 
-colorscheme dracula
-
-let g:lightline = { 'colorscheme': 'dracula' }
+let g:blamer_enabled = 1
 
 let g:startify_custom_header = [
 	\ '    _   _         __     ___',
@@ -86,6 +88,6 @@ nnoremap <leader>f		:NERDTreeToggle<cr>
 nnoremap <leader><space>	:Files<cr>
 nnoremap <leader>b		:Buffers<cr>
 nnoremap <leader>.		:!ctags -R .<cr>
-nnoremap <leader>dd		:SignifyHunkDiff<cr>
-nnoremap <leader>du		:SignifyHunkUndo<cr>
-nnoremap <leader>g		:Goyo<cr>
+nnoremap <leader>gd		:SignifyHunkDiff<cr>
+nnoremap <leader>gu		:SignifyHunkUndo<cr>
+nnoremap <leader>gb		:BlamerShow<cr>

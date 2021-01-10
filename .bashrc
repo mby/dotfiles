@@ -5,12 +5,12 @@
 export PATH=`yarn global bin`:$PATH
 
 # programs
+export FONT='Terminus'
 export EDITOR='nvim'
+export TERMINAL='alacritty'
 
 # prompt
 PS1='\033[34m\W: \033[39m'
-export LS_COLORS=''
-export BAT_THEME='Dracula'
 
 # options
 HISTCONTROL=ignoreboth

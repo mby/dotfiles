@@ -1,18 +1,18 @@
-import:
-  - /home/mbugrayildiz/.config/alacritty/dracula.yml
-
 window:
   padding:
     x: 10
     y: 10
-  dynamic_padding: true
 
 font:
   normal:
-    family: "Fira Code Retina"
-  size: 9
+    family: "Terminus"
   offset:
-        y: 2
+    y: 2
+  size: 10
+
+colors:
+  primary:
+    background: '0x000000'
 
 mouse:
   hide_when_typing: true
