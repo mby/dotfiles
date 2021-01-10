@@ -74,14 +74,15 @@ python
 qemu-headless
 qemu-headless-arch-extra
 redshift
+rustup
 scc
 sudo
 sxhkd
 sxiv
 telegram-desktop
+terminus-font
 texinfo
 tree
-ttf-fira-code
 unrar
 unzip
 valgrind
