@@ -73,6 +73,7 @@ python
 qemu-headless
 qemu-headless-arch-extra
 redshift
+ripgrep
 rustup
 scc
 sudo
