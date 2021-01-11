@@ -12,7 +12,7 @@ polybar example &
 nm-applet &
 blueman-applet &
 redshift-gtk &
-[ -f ~/.fehbg ] && ~/.fehbg
+bgs ~/.wlp &
 
 # workspaces
 bspc monitor -d I II III IV V VI VII VIII IX X

@@ -44,14 +44,13 @@ let g:blamer_enabled = 1
 " keybinds
 nnoremap ;			:
 nnoremap :			;
+nnoremap <c-t>			<c-z>
 
 nnoremap <leader>q		:q<cr>
 nnoremap <leader>Q		:qa!<cr>
 nnoremap <leader>w		:w<cr>
 
-nnoremap <c-a>			<c-^>
-nnoremap <c-t>			<c-z>
-
+nnoremap <leader>a		<c-^>
 nnoremap <leader>f		:Files<cr>
 nnoremap <leader>b		:Buffers<cr>
 nnoremap <leader>r		:Rg<cr>
