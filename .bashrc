@@ -35,9 +35,9 @@ setkbd() {
 	setxkbmap gb
 	setxkbmap -option caps:swapescape
 }
-
-
-# functions
 fzfcd() {
 	cd `sudo find ~/ \( ! -regex '.*/\..*' \) -type d | fzf --preview='tree -L {}'`
+}
+lock() {
+	i3lock-fancy -t "YILDIZ" -g
 }

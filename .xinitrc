@@ -1,5 +1,7 @@
-# set keyboard
-setxkb
+# set misc
+setxkbmap gb
+setxkbmap -option caps:swapescape
+bgs ~/.wlp &
 
 # start window manager
-exec bspwm
+exec dwm

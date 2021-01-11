@@ -34,6 +34,7 @@ libnewt
 libtool
 linux-firmware
 linux-zen
+make
 mongodb-bin
 nautilus
 neofetch
