@@ -18,7 +18,7 @@ set -o vi
 shopt -s autocd
 
 # keybinds
-bind '"\C-f":" cd `fd -t d . ~ | fzf --preview=\"tree -L 2 -C {}\"`
+bind '"\C-f":" fzfcd
 "'
 bind '"\C-t":" clear && fg
 "'
@@ -34,4 +34,10 @@ alias p='sudo pacman'
 setkbd() {
 	setxkbmap gb
 	setxkbmap -option caps:swapescape
+}
+
+
+# functions
+fzfcd() {
+	cd `sudo find ~/ \( ! -regex '.*/\..*' \) -type d | fzf --preview='tree -L {}'`
 }
