@@ -5,10 +5,8 @@ window:
 
 font:
   normal:
-    family: "Terminus"
-  offset:
-    y: 2
-  size: 10
+    family: Terminus
+  size: 11
 
 colors:
   primary:
