@@ -1,21 +1,12 @@
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
-# path
-export PATH=`yarn global bin`:$PATH
-
-# programs
-export FONT='Terminus'
-export EDITOR='nvim'
-export TERMINAL='alacritty'
-
 # prompt
 PS1='\033[34m\W: \033[39m'
+
 
 # options
 HISTCONTROL=ignoreboth
 set -o vi
 shopt -s autocd
+
 
 # keybinds
 bind '"\C-f":" fzfcd
@@ -40,4 +31,7 @@ fzfcd() {
 }
 lock() {
 	i3lock-fancy -t "YILDIZ" -g
+}
+bat() {
+	cat /sys/class/power_supply/BAT1/capacity
 }

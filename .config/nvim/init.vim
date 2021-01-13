@@ -12,11 +12,12 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'machakann/vim-sandwich'
 	Plug 'tpope/vim-commentary'
 	Plug 'junegunn/fzf.vim'
+	Plug 'scrooloose/nerdtree'
 	Plug 'mhinz/vim-signify'
-	Plug 'APZelos/blamer.nvim'
 
 	" eye candy
 	Plug 'fxn/vim-monochrome'
+	Plug 'APZelos/blamer.nvim'
 call plug#end()
 
 
@@ -52,6 +53,7 @@ nnoremap <leader>w		:w<cr>
 
 nnoremap <leader>a		<c-^>
 nnoremap <leader>f		:Files<cr>
+nnoremap <leader>n		:NERDTreeToggle<cr>
 nnoremap <leader>b		:Buffers<cr>
 nnoremap <leader>r		:Rg<cr>
 nnoremap <leader>gd		:SignifyHunkDiff<cr>
