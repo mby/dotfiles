@@ -1,5 +1,6 @@
 # prompt
 PS1='\033[34m\W: \033[39m'
+export PATH=$PATH:`yarn global bin`
 
 
 # options
@@ -17,9 +18,9 @@ bind '"\C-t":" clear && fg
 # aliases
 alias cfg="git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 alias ls='ls --color=auto'
+alias la='ls --color=auto -la'
 alias vi='nvim'
 alias p='sudo pacman'
-
 
 # commands
 setkbd() {
@@ -34,4 +35,8 @@ lock() {
 }
 bat() {
 	cat /sys/class/power_supply/BAT1/capacity
+}
+gmj() {
+	emoji=`gitmoji -l | fzf | awk '{split($0,a,":"); print a[2]}'`
+	echo $emoji | xclip -selection clipboard
 }
