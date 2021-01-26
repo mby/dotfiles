@@ -38,5 +38,5 @@ bat() {
 }
 gmj() {
 	emoji=`gitmoji -l | fzf | awk '{split($0,a,":"); print a[2]}'`
-	echo $emoji | xclip -selection clipboard
+	printf ":$emoji: " | xclip -selection clipboard
 }
