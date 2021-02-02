@@ -40,7 +40,7 @@ setkbd() {
 	setxkbmap -option caps:swapescape
 }
 fzfcd() {
-	cd `sudo find ~/ \( ! -regex '.*/\..*' \) -type d | fzf --preview='tree -L {}'`
+	cd `fdfind . ~ -t d | fzf --preview='tree -L {}'`
 }
 bat() {
 	cat /sys/class/power_supply/BAT1/capacity

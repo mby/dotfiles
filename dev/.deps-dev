@@ -1,0 +1,19 @@
+# warning:
+# this script is for myself to automate installing tools I use
+# don't use if you're not bootstrapping my dev env!
+
+
+
+### LANGUAGES ###
+
+# C/C++
+sudo apt install -y build-essential
+sudo apt install -y clang
+
+# Node.js
+sudo apt install -y curl
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+nvm install node
+
+# Python
+sudo apt install python3-venv
