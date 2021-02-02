@@ -4,9 +4,9 @@ export PATH=$PATH:/usr/sbin
 
 
 # defaults
-export BROWSER=firefox
-export EDITOR=nvim
-export TERMINAL=kitty
+export BROWSER='firefox'
+export EDITOR='nvim'
+export TERMINAL='kitty'
 
 
 # options

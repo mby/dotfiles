@@ -2,7 +2,7 @@
 super + Return
 	$TERMINAL
 super + d
-	dmenu_run -fn "$FONT:pixelsize=18" -nb "#000" -sb "#222"
+	dmenu_run -fn "Fira Code:pixelsize=14" -nb "#000" -sb "#111"
 
 # audio
 XF86Audio{RaiseVolume,LowerVolume}

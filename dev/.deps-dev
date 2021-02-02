@@ -17,3 +17,13 @@ nvm install node
 
 # Python
 sudo apt install python3-venv
+
+
+
+### TOOLS ###
+
+# Browser
+sudo apt install -y firefox
+
+# Misc
+sudo apt install -y htop
