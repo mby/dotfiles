@@ -1,6 +1,12 @@
 # prompt
 PS1='\033[34m\W: \033[39m'
-export PATH=$PATH:`yarn global bin`
+export PATH=$PATH:/usr/sbin
+
+
+# defaults
+export BROWSER=firefox
+export EDITOR=nvim
+export TERMINAL=kitty
 
 
 # options
@@ -15,12 +21,18 @@ bind '"\C-f":" fzfcd
 bind '"\C-t":" clear && fg
 "'
 
-# aliases
-alias cfg="git --git-dir=$HOME/dotfiles --work-tree=$HOME"
+# colors
 alias ls='ls --color=auto'
 alias la='ls --color=auto -la'
 alias vi='nvim'
-alias p='sudo pacman'
+
+# aliases
+alias audp='sudo apt dist-upgrade'
+alias aup='sudo apt upgrade'
+alias au='sudo apt update'
+alias ai='sudo apt install'
+alias ar='sudo apt autoremove'
+alias ass='sudo apt search'
 
 # commands
 setkbd() {
@@ -30,9 +42,6 @@ setkbd() {
 fzfcd() {
 	cd `sudo find ~/ \( ! -regex '.*/\..*' \) -type d | fzf --preview='tree -L {}'`
 }
-lock() {
-	i3lock-fancy -t "YILDIZ" -g
-}
 bat() {
 	cat /sys/class/power_supply/BAT1/capacity
 }
@@ -40,3 +49,8 @@ gmj() {
 	emoji=`gitmoji -l | fzf | awk '{split($0,a,":"); print a[2]}'`
 	printf ":$emoji: " | xclip -selection clipboard
 }
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

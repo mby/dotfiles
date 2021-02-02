@@ -4,21 +4,16 @@ super + Return
 super + d
 	dmenu_run -fn "$FONT:pixelsize=18" -nb "#000" -sb "#222"
 
-
 # audio
-XF86Audio{Mute,RaiseVolume,LowerVolume}
-	pamixer -{t,i 5,d 5}
+XF86Audio{RaiseVolume,LowerVolume}
+	pactl set-sink-volume 0 {+10%,-10%}
 
+XF86AudioMute
+	pactl set-sink-mute 0 toggle
 
 # brightness
 XF86MonBrightness{Up,Down}
 	sudo brightnessctl set {+10%,10%-}
-
-
-# lock &/ suspend
-super + {_,shift +} @comma
-	i3lock-fancy -f "Fira Code Retina" -t "YILDIZ" -g {_,&& systemctl suspend}
-
 
 # reloading
 

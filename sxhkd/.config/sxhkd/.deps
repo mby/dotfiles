@@ -1,0 +1,8 @@
+# program itself
+sudo apt install -y sxhkd
+
+# audio control
+sudo apt install -y pulseaudio
+
+# brightness control
+sudo apt install -y brightnessctl

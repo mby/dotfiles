@@ -5,7 +5,6 @@ let mapleader = " "
 " plugins
 call plug#begin(stdpath('data') . '/plugged')
 	" essentials
-	Plug 'ferranpm/vim-autopairs'
 	Plug 'editorconfig/editorconfig-vim'
 	Plug 'bronson/vim-trailing-whitespace'
 	Plug 'justinmk/vim-sneak'
@@ -26,7 +25,6 @@ set updatetime=100 termguicolors
 set splitright splitbelow
 set clipboard+=unnamedplus mouse=a
 set hidden nobackup nowritebackup noshowmode
-colorscheme monochrome
 
 hi Pmenu       guibg=gray10
 hi SignColumn  guibg=black

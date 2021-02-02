@@ -1,0 +1,2 @@
+# needed for fuzzy directory switching
+sudo apt install -y fd-find fzf tree
