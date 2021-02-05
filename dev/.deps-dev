@@ -1,8 +1,7 @@
 ### LANGUAGES ###
 
 # C/C++
-sudo apt install -y build-essential
-sudo apt install -y clang
+sudo apt install -y build-essential clang gdb valgrind
 wget https://github.com/premake/premake-core/releases/download/v5.0.0-alpha15/premake-5.0.0-alpha15-linux.tar.gz
 tar -xf premake-5.0.0-alpha15-linux.tar.gz
 rm premake-5.0.0-alpha15-linux.tar.gz

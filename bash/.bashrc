@@ -42,7 +42,7 @@ setkbd() {
 fzfcd() {
 	cd `fdfind . ~ -t d | fzf --preview='tree -L {}'`
 }
-bat() {
+batcap() {
 	cat /sys/class/power_supply/BAT1/capacity
 }
 gmj() {

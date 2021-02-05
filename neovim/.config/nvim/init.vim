@@ -11,6 +11,7 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'machakann/vim-sandwich'
 	Plug 'tpope/vim-commentary'
 	Plug 'junegunn/fzf.vim'
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'scrooloose/nerdtree'
 	Plug 'mhinz/vim-signify'
 
