@@ -2,6 +2,7 @@
 let mapleader = " "
 
 
+
 " plugins
 call plug#begin(stdpath('data') . '/plugged')
 	" essentials
@@ -16,9 +17,10 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'mhinz/vim-signify'
 
 	" eye candy
-	Plug 'fxn/vim-monochrome'
+	Plug 'morhetz/gruvbox'
 	Plug 'APZelos/blamer.nvim'
 call plug#end()
+
 
 
 " config
@@ -27,18 +29,13 @@ set splitright splitbelow
 set clipboard+=unnamedplus mouse=a
 set hidden nobackup nowritebackup noshowmode
 
-hi Pmenu       guibg=gray10
-hi SignColumn  guibg=black
-hi ColorColumn guibg=gray
 call matchadd('ColorColumn', '\%81v', 100)
-
-hi SignifySignAdd    guibg=black guifg=lime
-hi SignifySignChange guibg=black guifg=yellow
-hi SignifySignDelete guibg=black guifg=red
+colorscheme gruvbox
 
 let g:loaded_matchparen = 1
 let g:sneak#label = 1
 let g:blamer_enabled = 1
+
 
 
 " keybinds
