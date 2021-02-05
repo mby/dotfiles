@@ -27,4 +27,4 @@ sudo apt install python3-venv
 sudo apt install -y firefox-esr
 
 # Misc
-sudo apt install -y htop
+sudo apt install -y htop entr
