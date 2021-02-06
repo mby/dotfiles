@@ -7,7 +7,7 @@ font pango:Fira Code Retina 8
 #gaps inner 10
 #smart_gaps on
 #smart_borders on
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
 
 client.focused          #00bfff #00bfff #000000 #00bfff #00bfff #00bfff
 client.focused_inactive #222222 #222222 #eeeeee #222222 #222222 #222222
@@ -27,7 +27,7 @@ bindsym $mod+Return exec $TERMINAL
 bindsym $mod+d      exec dmenu_run -fn "Fira Code:pixelsize=12" -nb "#000" -sb "#111"
 
 # window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 bindsym $mod+f fullscreen toggle
 bindsym $mod+Shift+space floating toggle
 
@@ -96,6 +96,7 @@ mode "resize" {
 	bindsym l resize grow width 10 px or 10 ppt
 
 	bindsym $mod+r mode "default"
+	bindsym Escape mode "default"
 }
 
 bindsym $mod+r mode "resize"

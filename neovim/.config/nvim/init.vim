@@ -17,7 +17,7 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'mhinz/vim-signify'
 
 	" eye candy
-	Plug 'morhetz/gruvbox'
+	Plug 'tomasiser/vim-code-dark'
 	Plug 'APZelos/blamer.nvim'
 call plug#end()
 
@@ -30,7 +30,7 @@ set clipboard+=unnamedplus mouse=a
 set hidden nobackup nowritebackup noshowmode
 
 call matchadd('ColorColumn', '\%81v', 100)
-colorscheme gruvbox
+colorscheme codedark
 
 let g:loaded_matchparen = 1
 let g:sneak#label = 1
