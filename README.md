@@ -3,11 +3,11 @@
 Details:
 
 - os: Debian (Stable)
-- wm: bspwm
+- wm: i3, bspwm
 - shell: bash
 - editor: neovim
 - terminal: kitty
-- terminal font: Fira Code
+- font: Fira Code
 - browser: firefox
 
 
