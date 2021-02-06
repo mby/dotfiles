@@ -1,3 +1,6 @@
+# alises
+[ -f ~/.bash_aliases ] && source ~/.bash_aliases
+
 # prompt
 PS1='\033[34m\W: \033[39m'
 export PATH=$PATH:/usr/sbin
@@ -20,19 +23,6 @@ bind '"\C-f":" fzfcd
 "'
 bind '"\C-t":" clear && fg
 "'
-
-# colors
-alias ls='ls --color=auto'
-alias la='ls --color=auto -la'
-alias vi='nvim'
-
-# aliases
-alias audp='sudo apt dist-upgrade'
-alias aup='sudo apt upgrade'
-alias au='sudo apt update'
-alias ai='sudo apt install'
-alias ar='sudo apt autoremove'
-alias ass='sudo apt search'
 
 # commands
 setkbd() {
