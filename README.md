@@ -2,11 +2,10 @@
 
 Details:
 
-- os: Debian (Stable)
-- wm: i3, bspwm
+- os: Ubuntu Latest
+- wm: GNOME
 - shell: bash
-- editor: neovim
-- terminal: kitty
+- editor: neovim, vscode
 - font: Fira Code
 - browser: firefox
 

@@ -1,5 +1,0 @@
-# program itself
-sudo apt install -y bspwm
-
-# this thing needs this
-sudo apt install -y xorg
