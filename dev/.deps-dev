@@ -17,7 +17,7 @@ export NVM_DIR="$HOME/.nvm"
 nvm install node
 
 # Python
-sudo apt install python3-venv
+sudo apt install -y python3-venv
 
 
 

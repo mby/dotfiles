@@ -2,7 +2,7 @@
 
 Details:
 
-- os: Ubuntu Latest
+- os: Pop OS
 - wm: GNOME
 - shell: bash
 - editor: neovim, vscode

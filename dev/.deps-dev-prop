@@ -9,4 +9,4 @@
 ### TOOLS ###
 
 # Visual Studio Code
-sudo snap install code --classic
+sudo apt install -y code
