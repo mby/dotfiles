@@ -16,8 +16,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 nvm install node
 
+
 # Python
 sudo apt install -y python3-venv
+
+
+# Go
+sudo apt install -y golang
 
 
 

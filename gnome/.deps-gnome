@@ -2,3 +2,4 @@
 sudo apt install -y materia-gtk-theme
 gsettings set org.gnome.desktop.interface gtk-theme 'Materia-dark-compact'
 gsettings set org.gnome.desktop.interface show-battery-percentage true
+gsettings set org.gnome.desktop.interface enable-animations false
