@@ -39,6 +39,13 @@ gmj() {
 	emoji=`gitmoji -l | fzf | awk '{split($0,a,":"); print a[2]}'`
 	printf ":$emoji: " | xclip -selection clipboard
 }
+rentr() {
+	find . -type f -name "$1" | entr -cr $2
+}
+ide() {
+	fzfcd
+	vi -c ':NerdTree'
+}
 
 # nvm
 export NVM_DIR="$HOME/.nvm"

@@ -17,6 +17,8 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'mhinz/vim-signify'
 
 	" eye candy
+	Plug 'vim-airline/vim-airline'
+	Plug 'joshdick/onedark.vim'
 	Plug 'tomasiser/vim-code-dark'
 	Plug 'APZelos/blamer.nvim'
 call plug#end()
@@ -29,8 +31,9 @@ set splitright splitbelow
 set clipboard+=unnamedplus mouse=a
 set hidden nobackup nowritebackup noshowmode
 
+set number
 call matchadd('ColorColumn', '\%81v', 100)
-colorscheme codedark
+colorscheme onedark
 
 let g:loaded_matchparen = 1
 let g:sneak#label = 1
@@ -46,6 +49,11 @@ nnoremap <c-t>			<c-z>
 nnoremap <leader>q		:q<cr>
 nnoremap <leader>Q		:qa!<cr>
 nnoremap <leader>w		:w<cr>
+
+nnoremap <c-h>			<c-w>h
+nnoremap <c-j>			<c-w>j
+nnoremap <c-k>			<c-w>k
+nnoremap <c-l>			<c-w>l
 
 nnoremap <leader>a		<c-^>
 nnoremap <leader>f		:Files<cr>
