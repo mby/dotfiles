@@ -43,8 +43,9 @@ rentr() {
 	find . -type f -name "$1" | entr -cr $2
 }
 ide() {
+	setkbd
 	fzfcd
-	vi -c ':NerdTree'
+	vi -c ':NERDTreeToggle'
 }
 
 # nvm
