@@ -21,8 +21,6 @@ shopt -s autocd
 # keybinds
 bind '"\C-f":" fzfcd
 "'
-bind '"\C-t":" clear && fg
-"'
 
 # commands
 setkbd() {
