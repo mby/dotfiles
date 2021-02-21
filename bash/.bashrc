@@ -25,7 +25,7 @@ setkbd() {
 	setxkbmap -option caps:swapescape
 }
 fzfcd() {
-	cd `fdfind . ~ -t d | fzf --preview='tree -L {}'`
+	cd `fd . ~ -t d | fzf --preview='tree -L {}'`
 }
 batcap() {
 	cat /sys/class/power_supply/BAT1/capacity
