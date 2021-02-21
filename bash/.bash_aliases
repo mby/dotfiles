@@ -1,10 +1,5 @@
 # package manager
-alias audp='sudo apt dist-upgrade'
-alias aup='sudo apt upgrade'
-alias au='sudo apt update'
-alias ai='sudo apt install'
-alias ar='sudo apt autoremove'
-alias ass='sudo apt search'
+alias e='sudo eopkg'
 
 # colors
 alias ls='ls --color=auto'

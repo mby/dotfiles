@@ -5,8 +5,7 @@
 # if you don't want these, simply remove this file before bootstrapping
 
 
-
 ### TOOLS ###
 
 # Visual Studio Code
-sudo apt install -y code
+sudo eopkg it -y vscode

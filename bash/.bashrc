@@ -1,22 +1,19 @@
+# defaults
+source /usr/share/defaults/etc/profile
+export PATH=$PATH:/usr/local/bin
+
 # alises
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
 
-# prompt
-PS1='\033[34m\W: \033[39m'
-export PATH=$PATH:/usr/sbin
-
-
-# defaults
+# programs
 export BROWSER='firefox'
 export EDITOR='nvim'
 export TERMINAL='kitty'
-
 
 # options
 HISTCONTROL=ignoreboth
 set -o vi
 shopt -s autocd
-
 
 # keybinds
 bind '"\C-f":" fzfcd

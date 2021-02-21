@@ -1,5 +1,5 @@
 # install gnu stow
-sudo apt install stow -y
+sudo eopkg it -y stow
 
 # install dotfiles
 stow */

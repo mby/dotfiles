@@ -1,32 +1,20 @@
 ### LANGUAGES ###
 
 # C/C++
-sudo apt install -y build-essential clang gdb valgrind
+sudo eopkg it -y -c system.devel
+sudo eopkg it -y llvm-clang gdb valgrind
 wget https://github.com/premake/premake-core/releases/download/v5.0.0-alpha15/premake-5.0.0-alpha15-linux.tar.gz
 tar -xf premake-5.0.0-alpha15-linux.tar.gz
+sudo mkdir -p /usr/local/bin
 rm premake-5.0.0-alpha15-linux.tar.gz
 sudo mv premake5 /usr/local/bin
 
-
 # Node.js
-sudo apt install -y curl
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 nvm install node
 
-
-# Python
-sudo apt install -y python3-venv
-
-
 # Go
-sudo apt install -y golang
-
-
-
-### TOOLS ###
-
-# Misc
-sudo apt install -y htop entr
+sudo eopkg it -y golang
