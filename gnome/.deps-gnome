@@ -1,2 +1,5 @@
-# themes & tweaks
-gsettings set org.gnome.desktop.interface gtk-theme 'Plata-Noir-Compact'
+# desktop
+cat gnome/.interface.dconf | dconf load /org/gnome/desktop/interface/
+
+# terminal
+cat gnome/.terminal.dconf | dconf load /org/gnome/terminal/

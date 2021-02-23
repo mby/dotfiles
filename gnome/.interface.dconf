@@ -1,0 +1,6 @@
+[/]
+cursor-theme='breeze_cursors'
+gtk-im-module='gtk-im-context-simple'
+gtk-theme='Plata-Noir-Compact'
+icon-theme='Papirus'
+show-battery-percentage=true
