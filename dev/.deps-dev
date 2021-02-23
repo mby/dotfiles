@@ -10,11 +10,13 @@ rm premake-5.0.0-alpha15-linux.tar.gz
 sudo mv premake5 /usr/local/bin
 
 # Node.js
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-nvm install node
+sudo eopkg it -y yarn
 
 # Go
 sudo eopkg it -y golang
+
+
+### TOOLS ###
+
+# vscode
+sudo eopkg it -y vscode

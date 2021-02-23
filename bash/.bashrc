@@ -8,11 +8,9 @@ export PATH=$PATH:/usr/local/bin
 # programs
 export BROWSER='firefox'
 export EDITOR='nvim'
-export TERMINAL='kitty'
 
 # options
 HISTCONTROL=ignoreboth
-set -o vi
 shopt -s autocd
 
 # keybinds
@@ -40,10 +38,5 @@ rentr() {
 ide() {
 	setkbd
 	fzfcd
-	vi -c ':NERDTreeToggle'
+	nvim -c ':NERDTreeToggle'
 }
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
