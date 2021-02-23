@@ -1,13 +1,10 @@
 # defaults
 source /usr/share/defaults/etc/profile
 export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/home/mby/.yarn/bin
 
 # alises
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
-
-# programs
-export BROWSER='firefox'
-export EDITOR='nvim'
 
 # options
 HISTCONTROL=ignoreboth
@@ -27,10 +24,6 @@ fzfcd() {
 }
 batcap() {
 	cat /sys/class/power_supply/BAT1/capacity
-}
-gmj() {
-	emoji=`gitmoji -l | fzf | awk '{split($0,a,":"); print a[2]}'`
-	printf ":$emoji: " | xclip -selection clipboard
 }
 rentr() {
 	find . -type f -name "$1" | entr -cr $2

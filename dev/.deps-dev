@@ -2,7 +2,7 @@
 
 # C/C++
 sudo eopkg it -y -c system.devel
-sudo eopkg it -y llvm-clang gdb valgrind
+sudo eopkg it -y llvm-clang gdb valgrind hyperfine
 wget https://github.com/premake/premake-core/releases/download/v5.0.0-alpha15/premake-5.0.0-alpha15-linux.tar.gz
 tar -xf premake-5.0.0-alpha15-linux.tar.gz
 sudo mkdir -p /usr/local/bin
