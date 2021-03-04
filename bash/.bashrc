@@ -2,6 +2,7 @@
 source /usr/share/defaults/etc/profile
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:/home/mby/.yarn/bin
+export PATH=$PATH:/home/mby/.dotnet
 
 # alises
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
@@ -18,6 +19,12 @@ bind '"\C-f":" fzfcd
 setkbd() {
 	setxkbmap gb
 	setxkbmap -option caps:swapescape
+}
+setbg() {
+	if [ -f ~/.fehbg ]
+	then
+		sleep 3 && bash ~/.fehbg
+	fi
 }
 fzfcd() {
 	cd `fd . ~ -t d | fzf --preview='tree -L {}'`

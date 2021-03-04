@@ -17,9 +17,8 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 	" eye candy
-	Plug 'vim-airline/vim-airline'
-	Plug 'joshdick/onedark.vim'
-	Plug 'tomasiser/vim-code-dark'
+	Plug 'itchyny/lightline.vim'
+	Plug 'co1ncidence/mountaineer.vim'
 	Plug 'APZelos/blamer.nvim'
 call plug#end()
 
@@ -32,11 +31,12 @@ set hidden nobackup nowritebackup noshowmode
 
 set number
 call matchadd('ColorColumn', '\%81v', 100)
-colorscheme codedark
+colorscheme mountaineer
 
 let g:loaded_matchparen = 1
 let g:sneak#label = 1
 let g:blamer_enabled = 1
+let g:lightline = {'colorscheme': 'mountaineer'}
 
 
 " keybinds
