@@ -2,14 +2,17 @@
 set $mod Mod4
 floating_modifier $mod
 
+# startup
+exec --no-startup-id picom -b
+exec --no-startup-id [ -f ~/.fehbg ] && bash ~/.fehbg
+exec --no-startup-id polybar Bar
+
 # styles
 font pango:Fira Code Retina 8
-gaps inner 10
-for_window [class="^.*"] border pixel 2
+gaps inner 15
+smart_borders on
+for_window [class="^.*"] border pixel 1
 
-client.focused          #00bfff #00bfff #000000 #00bfff #00bfff #00bfff
-client.focused_inactive #222222 #222222 #eeeeee #222222 #222222 #222222
-client.unfocused        #222222 #222222 #eeeeee #222222 #222222 #222222
 
 # audio
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +10%
@@ -22,7 +25,7 @@ bindsym XF86MonBrightnessDown sudo brightnessctl set 10%-
 
 # programs
 bindsym $mod+Return exec kitty
-bindsym $mod+d      exec dmenu_run -fn "JetBrains Mono Regular:pixelsize=14" -nb "#000" -sb "#111"
+bindsym $mod+d      exec dmenu_run -fn "monospace:pixelsize=14" -nb "#000" -sb "#111"
 
 # window
 bindsym $mod+q kill
@@ -100,14 +103,13 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # status bar
-bar {
-	status_command i3status
-	position top
-	colors {
-		background #1c1c1c
-		separator  #1c1c1c
-		focused_workspace  #00bfff #00bfff #000000
-		inactive_workspace #1c1c1c #1c1c1c #eeeeee
-		urgent_workspace   #ff6347 #ff6347 #ffffff
-	}
-}
+# bar {
+# 	status_command i3status
+# 	position top
+# 	colors {
+# 		separator  #000000
+# 		focused_workspace  #000000 #000000 #00bfff
+# 		inactive_workspace #000000 #000000 #eeeeee
+# 		urgent_workspace   #000000 #000000 #ff6347
+# 	}
+# }

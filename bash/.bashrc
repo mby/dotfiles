@@ -7,6 +7,9 @@ export PATH=$PATH:/home/mby/.dotnet
 # alises
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
 
+# secrets
+[ -f ~/.bash_secrets ] && source ~/.bash_secrets
+
 # options
 HISTCONTROL=ignoreboth
 shopt -s autocd
@@ -23,7 +26,8 @@ setkbd() {
 setbg() {
 	if [ -f ~/.fehbg ]
 	then
-		sleep 3 && bash ~/.fehbg
+		sleep 3
+		bash ~/.fehbg
 	fi
 }
 fzfcd() {

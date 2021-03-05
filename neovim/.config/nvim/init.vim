@@ -18,7 +18,7 @@ call plug#begin(stdpath('data') . '/plugged')
 
 	" eye candy
 	Plug 'itchyny/lightline.vim'
-	Plug 'co1ncidence/mountaineer.vim'
+	Plug 'tomasiser/vim-code-dark'
 	Plug 'APZelos/blamer.nvim'
 call plug#end()
 
@@ -26,17 +26,22 @@ call plug#end()
 " config
 set updatetime=100 termguicolors
 set splitright splitbelow
-set clipboard+=unnamedplus mouse=a cmdheight=2 shortmess+=c
+set clipboard+=unnamedplus mouse=a shortmess+=c
 set hidden nobackup nowritebackup noshowmode
 
-set number
 call matchadd('ColorColumn', '\%81v', 100)
-colorscheme mountaineer
+colorscheme codedark
+set t_Co=256
+set background=dark
+highlight Normal ctermbg=NONE guibg=NONE
+highlight nonText ctermbg=NONE guibg=NONE
+highlight SignColumn ctermbg=NONE guibg=NONE
+highlight EndOfBuffer ctermbg=NONE guibg=NONE
 
 let g:loaded_matchparen = 1
 let g:sneak#label = 1
 let g:blamer_enabled = 1
-let g:lightline = {'colorscheme': 'mountaineer'}
+let g:lightline = {'colorscheme': 'codedark'}
 
 
 " keybinds
