@@ -1,5 +1,7 @@
 # package manager
-alias e='sudo eopkg'
+alias ai='sudo apt install'
+alias ass='sudo apt search'
+alias au='sudo apt update && sudo apt upgrade'
 
 # colors
 alias ls='ls --color=auto'
@@ -7,7 +9,6 @@ alias la='ls --color=auto -la'
 alias grep='grep --color'
 
 # useful
-alias vi='nvim'
 alias svi='sudoedit'
 alias ff='find . -type f -name'
 

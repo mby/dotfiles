@@ -1,3 +1,6 @@
+# theme
+sudo apt install -y materia-gtk-theme gnome-tweaks
+
 # desktop
 cat gnome/.interface.dconf | dconf load /org/gnome/desktop/interface/
 

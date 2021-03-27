@@ -1,2 +1,0 @@
-# needed for fuzzy directory switching
-sudo eopkg it -y fd fzf

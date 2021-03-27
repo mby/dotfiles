@@ -1,9 +1,9 @@
 [credential]
 	helper = cache
 [core]
-	editor = nvim
+	editor = vi
 [user]
-	name = mbugrayildiz
+	name = mby
 	email = mbugrayildiz@outlook.com
 [pull]
 	rebase = false

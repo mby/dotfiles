@@ -1,8 +1,7 @@
 ### LANGUAGES ###
 
 # C/C++
-sudo eopkg it -y -c system.devel
-sudo eopkg it -y llvm-clang gdb valgrind hyperfine
+sudo apt install -y build-essential
 wget https://github.com/premake/premake-core/releases/download/v5.0.0-alpha15/premake-5.0.0-alpha15-linux.tar.gz
 tar -xf premake-5.0.0-alpha15-linux.tar.gz
 sudo mkdir -p /usr/local/bin
@@ -10,13 +9,19 @@ rm premake-5.0.0-alpha15-linux.tar.gz
 sudo mv premake5 /usr/local/bin
 
 # Node.js
-sudo eopkg it -y yarn
+sudo apt install -y curl
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+export NVM_DIR="$HOME/.nvm" 
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+nvm install node
+npm -g i yarn
 
 # Go
-sudo eopkg it -y golang
+sudo apt install -y golang
 
 
 ### TOOLS ###
 
-# vscode
-sudo eopkg it -y vscode
+sudo snap install --classic code
+sudo snap install discord

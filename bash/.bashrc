@@ -1,8 +1,10 @@
+# prompt
+PS1='\[\033[34m\]\W\[\033[37m\]: '
+
 # defaults
-source /usr/share/defaults/etc/profile
 export PATH=$PATH:/usr/local/bin
-export PATH=$PATH:/home/mby/.yarn/bin
-export PATH=$PATH:/home/mby/.dotnet
+export PATH=$PATH:$HOME/.yarn/bin
+export PATH=$PATH:$HOME/go/bin
 
 # alises
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
@@ -19,28 +21,18 @@ bind '"\C-f":" fzfcd
 "'
 
 # commands
-setkbd() {
-	setxkbmap gb
+swapcaps() {
 	setxkbmap -option caps:swapescape
-}
-setbg() {
-	if [ -f ~/.fehbg ]
-	then
-		sleep 3
-		bash ~/.fehbg
-	fi
 }
 fzfcd() {
 	cd `fd . ~ -t d | fzf --preview='tree -L {}'`
 }
-batcap() {
-	cat /sys/class/power_supply/BAT1/capacity
-}
 rentr() {
-	find . -type f -name "$1" | entr -cr $2
+	fd . -t f "$1" | entr -cr $2
 }
-ide() {
-	setkbd
-	fzfcd
-	nvim -c ':NERDTreeToggle'
+gorun() {
+	fd . -t f '*.go' | entr -cr 'go run .'
+}
+mocky() {
+	fd . -t f 'repository.go'
 }

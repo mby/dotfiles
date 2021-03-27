@@ -1,10 +1,9 @@
 # My Dotfiles
 
-- os: Solus
+- os: Ubuntu
 - wm: GNOME
 - shell: bash
-- editor: neovim, vscode
-- font: JetBrains Mono
+- editor: vscode
 - browser: Firefox
 
 
