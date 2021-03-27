@@ -28,11 +28,27 @@ fzfcd() {
 	cd `fd . ~ -t d | fzf --preview='tree -L {}'`
 }
 rentr() {
-	fd . -t f "$1" | entr -cr $2
+	fd -t f "$1" | entr -cr $2
 }
 gorun() {
-	fd . -t f '*.go' | entr -cr 'go run .'
+	fd -t f '*.go' | entr -cr 'go run .'
 }
 mocky() {
-	fd . -t f 'repository.go'
+	files=`fd 'repository.go'`
+	for f in $files; do
+		root=`pwd`
+		mockfile=`basename $f`
+		mockfile=${mockfile%.go}_mock.go
+
+		cd `dirname $f`/../../
+		pack=`pwd`
+		pack=`basename $pack`
+
+		echo ${f%.go}_mock.go
+
+		cd $root
+		cd `dirname $f`
+		mockgen -source=repository.go -destination=$mockfile -package=pack
+		cd $root
+	done
 }

@@ -1,3 +1,6 @@
+# fixed
+alias fd='fdfind'
+
 # package manager
 alias ai='sudo apt install'
 alias ass='sudo apt search'
